@@ -6,6 +6,8 @@
     font-family: 'Lato', sans-serif;
 }
 body{
+    width: 100%;
+    height: 100vh;
     background-color: #a3bcfc !important;
 }
 .header h1{
@@ -25,7 +27,9 @@ body{
     border-radius: 5px;
     padding: 10px 25px 10px 25px;
 }
-
+svg.svg-inline--fa.fabars.active{
+    border: none;
+}
 a.navbar-brand{
     color: #164caa;
     font-weight: 600;
@@ -37,10 +41,14 @@ a.nav-link{
 }
 a.nav-link:hover{
     color: #fff;
-    border-bottom: 1px solid #164caa;
+    transition: .5s ease-in-out;
+}
+.navbar-toggler:focus{
+    box-shadow: 0px 0px 0px;
 }
 /* About us */
 #About{
+    width: 100%;
     background-color: #fff;
 }
 .aboutcontent h1{
@@ -57,6 +65,15 @@ a.nav-link:hover{
     color: #fff;
     font-weight: 600;
     border: none;
+}
+.toolsblock{
+    padding: 10px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 2px #2b2a2a69;
 }
 /* Services */
 .services h1{
@@ -76,6 +93,7 @@ a.nav-link:hover{
 }
 /* our Services */
 #ourservices{
+    width: 100%;
     margin-top: 50px;
     background-color: #fff;
 }
@@ -87,17 +105,29 @@ a.nav-link:hover{
 }
 /* Feedback */
 #feedback{
+    width: 100%;
     background-color: #fff;
 }
 .feedback p{
     font-weight: 600;
     color: #000000;
+    text-align: justify;
 }
-.Lakshmi{
-    border-radius: 60%;
+.feedblock{
+    box-shadow: 0px 2px 2px #2b2a2a69;
 }
-.Murugan{
-    border-radius: 60%;
+.feedbackmembers{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+}
+.Lakshmi img{
+    border-radius: 50%;
+}
+.Murugan img{
+    border-radius: 50%;
 }
 .next{
     margin-right: 25px;
@@ -114,4 +144,51 @@ a.nav-link:hover{
     border: none;
     border-radius: 5px;
     padding: 10px 15px 10px 15px;
+}
+/* form */
+#Form{
+    width: 100%;
+    background-color: #fff;
+}
+.contactusform{
+    display: flex;
+    flex-direction: column;
+}
+.form h1{
+    font-weight: 600;
+    color: #000000;
+}
+.contactusform input{
+    padding: 10px;
+    margin-top: 10px;
+}
+.contactusform textarea{
+    padding: 10px;
+    margin-top: 10px;
+}
+.contactusform button{
+    background-color: #164caa;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+}
+.map{
+    padding: 10px;
+}
+/* footer */
+#Footer{
+    width: 100%;
+    background-color: #1f1e1e ;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.copyrights p{
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
 }
